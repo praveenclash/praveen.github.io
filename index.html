@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="caculator.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="bg">
+
+
+        <div class="logo">
+            <i style="display: inline-block;margin-bottom: 0px;padding-bottom: 0px;" class="fa-brands fa-apple"></i>
+            <h3 style="display: inline-block;margin-bottom: 0px;padding-bottom: 0px;">Calculator</h3>
+        </div>
+
+        <div class="warpper">
+
+            <div class="display">
+                <input type="text" id="display" placeholder="0">
+            </div>
+
+            <button
+                style="font-weight: normal; padding: 10px;font-size: 30px; background-color: rgb(159, 160, 159); letter-spacing: -2px; text-align: center;padding-top: 15px;padding-bottom: 15px;color: black;"
+                id="number1" onclick="clearDisplay()">AC</button>
+
+            <button
+                style="background-color: rgb(159, 160, 159);font-size: 30px;padding: 15px;color:  black; font-size: none;"
+                id="number1" onclick="Display('7')"><i class="fa-solid fa-greater-than-equal"></i></button>
+
+            <button style="background-color: rgb(159, 160, 159);font-size: 30px;padding: 15px;color: black;"
+                id="number1" onclick="Display('%')">%</button>
+            <button style="background-color: rgba(95, 247, 7, 0.87);font-size: 30px;padding: 15px" id="number1"
+                onclick="Display('/')"><i class="fa-solid fa-divide"></i></button>
+            <!-- number -->
+            <button id="number" onclick="Display('7')">7</button>
+            <button id="number" onclick="Display('8')">8</button>
+            <button id="number" onclick="Display('9')">9</button>
+            <!-- number -->
+            <button style="background-color: rgba(95, 247, 7, 0.87);font-size: 30px;padding: 15px" id="number1"
+                onclick="Display('*')"><i class="fa-solid fa-xmark"></i></button>
+
+            <!-- number -->
+            <button id="number" onclick="Display('4')">4</button>
+            <button id="number" onclick="Display('5')">5</button>
+            <button id="number" onclick="Display('6')">6</button>
+            <!-- number -->
+
+            <button style="background-color: rgba(95, 247, 7, 0.87);font-size: 30px;padding: 15px" id="number1"
+                onclick="Display('-')"><i class="fa-solid fa-minus"></i></button>
+
+            <!-- number -->
+            <button id="number" onclick="Display('1')">1</button>
+            <button id="number" onclick="Display('2')">2</button>
+            <button id="number" onclick="Display('3')">3</button>
+            <!-- number -->
+
+            <button style="background-color: rgba(95, 247, 7, 0.87);font-size: 30px;padding: 15px" id="number1"><i
+                    class="fa-solid fa-plus" onclick="Display('+')"></i></button>
+
+            <button style="padding-right: 97px; padding-top: 15px ;padding-bottom: 15px ;text-align: center;
+         border-radius: 29px; margin-top: 7px;
+         font-size: 29px;
+         " id="number1" onclick="Display('0')">0</button>
+
+            <button style="margin: 0; text-align: center;
+         padding-right: 25px; padding-left: 25px;
+         " id="number1" onclick="Display('.')">.</button>
+
+            <button style="background-color: rgba(95, 247, 7, 0.87);font-size: 30px;padding: 15px" id="number1"
+                onclick="calculateResult()"><i class="fa-solid fa-equals"></i></button>
+
+
+        </div>
+
+    </div>
+
+    <script src="caculator.js"></script>
+
+
+</body>
+
+</html> 
